@@ -50,7 +50,6 @@ export const WithError: Story = {
   },
 };
 
-// --- ВИПРАВЛЕННЯ 1: Виносимо логіку Clearable в окремий компонент ---
 const ClearableDemo = (args: InputProps) => {
   const [value, setValue] = useState("This text can be cleared");
 
@@ -74,8 +73,6 @@ export const Clearable: Story = {
     placeholder: "Type something...",
   },
 };
-
-// --- ВИПРАВЛЕННЯ 2: Виносимо логіку React Hook Form в окремий компонент ---
 const RHFDemo = () => {
   interface FormData {
     username: string;
